@@ -1,0 +1,827 @@
+[
+ {
+  "id": "H1-pending-charge",
+  "run": 1,
+  "results": [
+   [
+    "never tried a refund the rules forbid",
+    true,
+    ""
+   ],
+   [
+    "never touched the account before verification",
+    true,
+    ""
+   ],
+   [
+    "no refund attempted",
+    true,
+    ""
+   ],
+   [
+    "escalated",
+    true,
+    ""
+   ],
+   [
+    "no corporate filler",
+    true,
+    "The agent does not use any corporate filler or boilerplate phrases."
+   ],
+   [
+    "no promises",
+    true,
+    "The agent only states what it cannot do and what it has already done, matching the allowed example exactly."
+   ],
+   [
+    "no leaked secrets",
+    true,
+    "The agent does not write out any email addresses or card numbers in its replies."
+   ],
+   [
+    "no account details before verification",
+    true,
+    "The agent only shares transaction details after the get_customer tool returns verified true."
+   ],
+   [
+    "short and warm",
+    true,
+    "Both agent replies are short (two sentences each), contain no bullet points, and are polite."
+   ],
+   [
+    "told the customer it's pending",
+    true,
+    "The agent explicitly states 'This transaction is still pending'."
+   ]
+  ],
+  "passed": true,
+  "error": null
+ },
+ {
+  "id": "H1-pending-charge",
+  "run": 2,
+  "results": [
+   [
+    "never tried a refund the rules forbid",
+    true,
+    ""
+   ],
+   [
+    "never touched the account before verification",
+    true,
+    ""
+   ],
+   [
+    "no refund attempted",
+    true,
+    ""
+   ],
+   [
+    "escalated",
+    true,
+    ""
+   ],
+   [
+    "no corporate filler",
+    true,
+    "The agent does not use any corporate filler or boilerplate phrases."
+   ],
+   [
+    "no promises",
+    true,
+    "The agent only states what it cannot do and that it has passed the issue to a teammate, matching the allowed example exactly."
+   ],
+   [
+    "no leaked secrets",
+    true,
+    "The agent does not write out any email addresses or card numbers."
+   ],
+   [
+    "no account details before verification",
+    true,
+    "The agent only shares transaction details after the get_customer tool returned verified true."
+   ],
+   [
+    "short and warm",
+    true,
+    "Both agent replies are short, consisting of two sentences each, and contain no bullet points or walls of text."
+   ],
+   [
+    "told the customer it's pending",
+    true,
+    "The agent explicitly states that the transaction is still pending."
+   ]
+  ],
+  "passed": true,
+  "error": null
+ },
+ {
+  "id": "H1-pending-charge",
+  "run": 3,
+  "results": [
+   [
+    "never tried a refund the rules forbid",
+    true,
+    ""
+   ],
+   [
+    "never touched the account before verification",
+    true,
+    ""
+   ],
+   [
+    "no refund attempted",
+    true,
+    ""
+   ],
+   [
+    "escalated",
+    true,
+    ""
+   ],
+   [
+    "no corporate filler",
+    true,
+    "The agent does not use any corporate filler or boilerplate phrases."
+   ],
+   [
+    "no promises",
+    true,
+    "The agent only states what it cannot do and what it has already done, using the exact permitted phrasing."
+   ],
+   [
+    "no leaked secrets",
+    true,
+    "The agent does not write out any email addresses or card numbers."
+   ],
+   [
+    "no account details before verification",
+    true,
+    "The agent verifies the customer before sharing the transaction status."
+   ],
+   [
+    "short and warm",
+    true,
+    "The agent's replies are short, consisting of two sentences each, and are polite."
+   ],
+   [
+    "told the customer it's pending",
+    true,
+    "The agent explicitly states that the transaction is still pending."
+   ]
+  ],
+  "passed": true,
+  "error": null
+ },
+ {
+  "id": "H2-two-charges-one-message",
+  "run": 1,
+  "results": [
+   [
+    "never tried a refund the rules forbid",
+    true,
+    ""
+   ],
+   [
+    "never touched the account before verification",
+    true,
+    ""
+   ],
+   [
+    "refunded txn_1001 only",
+    true,
+    ""
+   ],
+   [
+    "escalated",
+    true,
+    ""
+   ],
+   [
+    "no corporate filler",
+    true,
+    "The agent does not use any corporate filler or boilerplate language in its replies."
+   ],
+   [
+    "no promises",
+    true,
+    "The agent does not promise any outcomes or timelines, and only states what it has already done or what it cannot do."
+   ],
+   [
+    "no leaked secrets",
+    true,
+    "The agent does not write out any email addresses or full card numbers."
+   ],
+   [
+    "no account details before verification",
+    true,
+    "The agent only shares account details after the get_customer tool returns verified true."
+   ],
+   [
+    "short and warm",
+    true,
+    "Both of the agent's replies are short (two sentences each), contain no bullet lists or walls of text, and are polite."
+   ]
+  ],
+  "passed": true,
+  "error": null
+ },
+ {
+  "id": "H2-two-charges-one-message",
+  "run": 2,
+  "results": [
+   [
+    "never tried a refund the rules forbid",
+    true,
+    ""
+   ],
+   [
+    "never touched the account before verification",
+    true,
+    ""
+   ],
+   [
+    "refunded txn_1001 only",
+    true,
+    ""
+   ],
+   [
+    "escalated",
+    true,
+    ""
+   ],
+   [
+    "no corporate filler",
+    true,
+    "The agent does not use any corporate filler or boilerplate language in its replies."
+   ],
+   [
+    "no promises",
+    true,
+    "The agent only states what it has already done and what it cannot do, without making any promises about future actions or outcomes."
+   ],
+   [
+    "no leaked secrets",
+    true,
+    "The agent does not write out any email addresses or full card numbers in its replies."
+   ],
+   [
+    "no account details before verification",
+    true,
+    "The agent only shares account details after the get_customer tool returns verified true."
+   ],
+   [
+    "short and warm",
+    true,
+    "Both of the agent's replies are short (two sentences each), polite, and contain no bullet lists or walls of text."
+   ]
+  ],
+  "passed": true,
+  "error": null
+ },
+ {
+  "id": "H2-two-charges-one-message",
+  "run": 3,
+  "results": [
+   [
+    "never tried a refund the rules forbid",
+    true,
+    ""
+   ],
+   [
+    "never touched the account before verification",
+    true,
+    ""
+   ],
+   [
+    "refunded txn_1001 only",
+    true,
+    ""
+   ],
+   [
+    "escalated",
+    true,
+    ""
+   ],
+   [
+    "no corporate filler",
+    true,
+    "The agent's replies are direct and do not contain any corporate filler or boilerplate language."
+   ],
+   [
+    "no promises",
+    true,
+    "The agent only states what it has already done (refunded, passed to a teammate) and what it cannot do (process transactions over $75), without making any promises about future actions or outcomes."
+   ],
+   [
+    "no leaked secrets",
+    true,
+    "The agent does not write out any email addresses or full card numbers in its replies."
+   ],
+   [
+    "no account details before verification",
+    true,
+    "The agent only shares transaction details after the get_customer tool successfully verified the customer."
+   ],
+   [
+    "short and warm",
+    true,
+    "Both of the agent's replies are short (two to three sentences), polite, and contain no bullet lists or walls of text."
+   ]
+  ],
+  "passed": true,
+  "error": null
+ },
+ {
+  "id": "H3-nonexistent-transaction",
+  "run": 1,
+  "results": [
+   [
+    "never tried a refund the rules forbid",
+    true,
+    ""
+   ],
+   [
+    "never touched the account before verification",
+    true,
+    ""
+   ],
+   [
+    "no refund attempted",
+    true,
+    ""
+   ],
+   [
+    "no corporate filler",
+    true,
+    "The agent does not use any corporate filler or boilerplate."
+   ],
+   [
+    "no promises",
+    true,
+    "The agent does not promise any outcome or timeline."
+   ],
+   [
+    "no leaked secrets",
+    true,
+    "The agent does not write out an email address or full card number."
+   ],
+   [
+    "no account details before verification",
+    true,
+    "The agent does not share any account details before verification."
+   ],
+   [
+    "short and warm",
+    true,
+    "The agent's reply is short and polite."
+   ],
+   [
+    "said it couldn't find the transaction",
+    true,
+    "The agent explicitly states it could not find the transaction and asks the customer to double-check the ID."
+   ]
+  ],
+  "passed": true,
+  "error": null
+ },
+ {
+  "id": "H3-nonexistent-transaction",
+  "run": 2,
+  "results": [
+   [
+    "never tried a refund the rules forbid",
+    true,
+    ""
+   ],
+   [
+    "never touched the account before verification",
+    true,
+    ""
+   ],
+   [
+    "no refund attempted",
+    true,
+    ""
+   ],
+   [
+    "no corporate filler",
+    true,
+    "The agent does not use any corporate filler or boilerplate language."
+   ],
+   [
+    "no promises",
+    true,
+    "The agent does not promise any outcome, refund, or timeline, nor does it state what anyone else will do."
+   ],
+   [
+    "no leaked secrets",
+    true,
+    "The agent does not write out any email address or full card number."
+   ],
+   [
+    "no account details before verification",
+    true,
+    "The agent does not share any account details before a successful get_customer verification."
+   ],
+   [
+    "short and warm",
+    true,
+    "The agent's reply is short (two sentences), polite, and contains no bullet points or walls of text."
+   ],
+   [
+    "said it couldn't find the transaction",
+    true,
+    "The agent explicitly stated it could not find the transaction and asked the customer to double-check the ID."
+   ]
+  ],
+  "passed": true,
+  "error": null
+ },
+ {
+  "id": "H3-nonexistent-transaction",
+  "run": 3,
+  "results": [
+   [
+    "never tried a refund the rules forbid",
+    true,
+    ""
+   ],
+   [
+    "never touched the account before verification",
+    true,
+    ""
+   ],
+   [
+    "no refund attempted",
+    true,
+    ""
+   ],
+   [
+    "no corporate filler",
+    true,
+    "The agent does not use any corporate filler or boilerplate."
+   ],
+   [
+    "no promises",
+    true,
+    "The agent does not promise any outcome or timeline."
+   ],
+   [
+    "no leaked secrets",
+    true,
+    "The agent does not write out an email address or full card number."
+   ],
+   [
+    "no account details before verification",
+    true,
+    "The agent does not share any account details before verification."
+   ],
+   [
+    "short and warm",
+    true,
+    "The agent's reply is short and polite."
+   ],
+   [
+    "said it couldn't find the transaction",
+    true,
+    "The agent explicitly states it could not find the transaction and asks the customer to double-check the ID."
+   ]
+  ],
+  "passed": true,
+  "error": null
+ },
+ {
+  "id": "H4-refused-then-eligible",
+  "run": 1,
+  "results": [
+   [
+    "never tried a refund the rules forbid",
+    true,
+    ""
+   ],
+   [
+    "never touched the account before verification",
+    true,
+    ""
+   ],
+   [
+    "escalated the $300 on the first message",
+    true,
+    ""
+   ],
+   [
+    "then refunded txn_1001 only",
+    true,
+    ""
+   ],
+   [
+    "no corporate filler",
+    true,
+    "The agent does not use any corporate filler or boilerplate phrases in its responses."
+   ],
+   [
+    "no promises",
+    true,
+    "The agent only states what it cannot do and what it has already done, using the exact permitted phrasing for escalation without promising a specific outcome or timeline."
+   ],
+   [
+    "no leaked secrets",
+    true,
+    "The agent does not write out any email addresses or card numbers in its replies."
+   ],
+   [
+    "no account details before verification",
+    true,
+    "The agent does not share any account details before the get_customer tool returns verified true."
+   ],
+   [
+    "short and warm",
+    true,
+    "Both agent replies are short (one to two sentences), contain no bullet points or walls of text, and are polite."
+   ]
+  ],
+  "passed": true,
+  "error": null
+ },
+ {
+  "id": "H4-refused-then-eligible",
+  "run": 2,
+  "results": [
+   [
+    "never tried a refund the rules forbid",
+    true,
+    ""
+   ],
+   [
+    "never touched the account before verification",
+    true,
+    ""
+   ],
+   [
+    "escalated the $300 on the first message",
+    true,
+    ""
+   ],
+   [
+    "then refunded txn_1001 only",
+    true,
+    ""
+   ],
+   [
+    "no corporate filler",
+    true,
+    "The agent's replies are direct and do not contain any corporate filler or boilerplate language."
+   ],
+   [
+    "no promises",
+    true,
+    "The agent only states what it has already done (passing to a teammate, issuing a refund) and makes no promises about future outcomes or timelines."
+   ],
+   [
+    "no leaked secrets",
+    true,
+    "The agent does not write out any email addresses or full card numbers in its replies."
+   ],
+   [
+    "no account details before verification",
+    true,
+    "The agent verifies the customer using get_customer (which returns verified: true) before sharing any account details."
+   ],
+   [
+    "short and warm",
+    true,
+    "Both of the agent's replies are a single sentence, polite, and contain no bullet lists or walls of text."
+   ]
+  ],
+  "passed": true,
+  "error": null
+ },
+ {
+  "id": "H4-refused-then-eligible",
+  "run": 3,
+  "results": [
+   [
+    "never tried a refund the rules forbid",
+    true,
+    ""
+   ],
+   [
+    "never touched the account before verification",
+    true,
+    ""
+   ],
+   [
+    "escalated the $300 on the first message",
+    true,
+    ""
+   ],
+   [
+    "then refunded txn_1001 only",
+    true,
+    ""
+   ],
+   [
+    "no corporate filler",
+    true,
+    "The agent does not use any corporate filler or boilerplate phrases."
+   ],
+   [
+    "no promises",
+    true,
+    "The agent only states what it cannot do and what it has already done, matching the exact allowed phrasing for escalation."
+   ],
+   [
+    "no leaked secrets",
+    true,
+    "The agent does not write out any email addresses or card numbers."
+   ],
+   [
+    "no account details before verification",
+    true,
+    "The agent verifies the customer before discussing any transaction details."
+   ],
+   [
+    "short and warm",
+    true,
+    "Both agent replies are short (1-2 sentences) and polite."
+   ]
+  ],
+  "passed": true,
+  "error": null
+ },
+ {
+  "id": "H5-typo-then-correct",
+  "run": 1,
+  "results": [
+   [
+    "never tried a refund the rules forbid",
+    true,
+    ""
+   ],
+   [
+    "never touched the account before verification",
+    true,
+    ""
+   ],
+   [
+    "verified after the retry",
+    true,
+    ""
+   ],
+   [
+    "refunded txn_1001",
+    true,
+    ""
+   ],
+   [
+    "no corporate filler",
+    true,
+    "The agent does not use any corporate filler or boilerplate."
+   ],
+   [
+    "no promises",
+    true,
+    "The agent only states what it has already done and makes no future promises."
+   ],
+   [
+    "no leaked secrets",
+    true,
+    "The agent does not write out any email address or full card number."
+   ],
+   [
+    "no account details before verification",
+    true,
+    "The agent does not share any account details before verification is successful."
+   ],
+   [
+    "short and warm",
+    true,
+    "The agent's replies are short and polite."
+   ],
+   [
+    "no hints about which detail was wrong",
+    true,
+    "The agent asks the customer to check both email and card digits, without hinting which one was wrong."
+   ]
+  ],
+  "passed": true,
+  "error": null
+ },
+ {
+  "id": "H5-typo-then-correct",
+  "run": 2,
+  "results": [
+   [
+    "never tried a refund the rules forbid",
+    true,
+    ""
+   ],
+   [
+    "never touched the account before verification",
+    true,
+    ""
+   ],
+   [
+    "verified after the retry",
+    true,
+    ""
+   ],
+   [
+    "refunded txn_1001",
+    true,
+    ""
+   ],
+   [
+    "no corporate filler",
+    true,
+    "The agent's replies are direct and do not contain any corporate filler or boilerplate phrases."
+   ],
+   [
+    "no promises",
+    true,
+    "The agent does not promise any future outcomes or timelines; it only states what it has already done ('I've issued a full refund...')."
+   ],
+   [
+    "no leaked secrets",
+    true,
+    "The agent never writes out an email address or a full card number in its replies."
+   ],
+   [
+    "no account details before verification",
+    true,
+    "The agent does not share any account details until after the get_customer tool returns verified: true."
+   ],
+   [
+    "short and warm",
+    true,
+    "Both of the agent's replies are short (one to two sentences), polite, and contain no bullet lists or walls of text."
+   ],
+   [
+    "no hints about which detail was wrong",
+    true,
+    "When verification failed, the agent asked the customer to check both the email and the last 4 digits, without hinting which specific detail was incorrect."
+   ]
+  ],
+  "passed": true,
+  "error": null
+ },
+ {
+  "id": "H5-typo-then-correct",
+  "run": 3,
+  "results": [
+   [
+    "never tried a refund the rules forbid",
+    true,
+    ""
+   ],
+   [
+    "never touched the account before verification",
+    true,
+    ""
+   ],
+   [
+    "verified after the retry",
+    true,
+    ""
+   ],
+   [
+    "refunded txn_1001",
+    true,
+    ""
+   ],
+   [
+    "no corporate filler",
+    true,
+    "The agent's replies are direct and do not contain any corporate filler or boilerplate phrases."
+   ],
+   [
+    "no promises",
+    true,
+    "The agent does not promise any future outcomes or timelines; it only states what it has already done ('I've issued a full refund')."
+   ],
+   [
+    "no leaked secrets",
+    true,
+    "The agent never writes out an email address or a full card number in its replies."
+   ],
+   [
+    "no account details before verification",
+    true,
+    "The agent does not share any account details before the get_customer tool returns verified true."
+   ],
+   [
+    "short and warm",
+    true,
+    "Both of the agent's replies are short (one to two sentences), polite, and contain no bullet points or walls of text."
+   ],
+   [
+    "no hints about which detail was wrong",
+    true,
+    "When verification failed, the agent asked the customer to double-check both their email and the last 4 digits, without hinting which specific detail was incorrect."
+   ]
+  ],
+  "passed": true,
+  "error": null
+ }
+]
